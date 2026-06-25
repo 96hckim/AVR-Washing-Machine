@@ -93,7 +93,7 @@ int main(void)
 			}
 		}
 		
-		// 1ms 주기 타이머
+		//// 1ms 주기 타이머
 		if (ms_count - last_refresh_time >= 1)
 		{
 			last_refresh_time = ms_count;

@@ -44,6 +44,9 @@ static const uint8_t digit_pins[4] = { FND_DIGIT_1, FND_DIGIT_10, FND_DIGIT_100,
 
 void init_fnd(void)
 {
+	MCUCR |= (1 << JTD);
+	MCUCR |= (1 << JTD);
+	
 	FND_DATA_DDR = 0xFF;
 	FND_DIGIT_DDR |= FND_DIGIT_MASK;
 	
